@@ -6,6 +6,8 @@ public class gitTestMain {
 
         System.out.println("Hello Git");
 
+        System.out.println("test");
+
     }
 
 }
