@@ -1,0 +1,90 @@
+#top{
+	background-color: #CCCCCC;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+}
+#main{
+	background-color: #F5F4F4;
+	width: 100%;
+	clear: both;
+	margin-top: 110px;
+	font-size: 12px;
+}
+#bottom{
+	background-color: #CCCCCC;
+	width: 100%;
+	height: 150px;
+	margin-top: 10px;
+}
+#centerbox{
+	width: 1000px;
+	margin: 10px auto;
+}
+#left{
+	display: inline-block;
+	margin-left: 70px;
+	width: 200px;
+	height: 400px;
+}
+#right{
+	vertical-align: top;
+	display: inline-block;
+	width: 700px;
+	background-color: white;
+}
+
+#left>ul>li{
+	margin: 0;
+	width: 200px;
+	height: 36.3px;
+	border-bottom: #EEEEEE solid 1px;
+	background-color: white;
+	position: relative;
+}
+#left>ul>li>h{
+	margin-left: 30px;
+	line-height: 36px;
+}
+#left>ul>li>span{
+	position: absolute;
+	top: 5.5px;
+	right: 20px;
+}
+#left>ul>li:first-child>h{
+	margin-left: 0;
+}
+#left>ul>li:first-child>img{
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+#left>ul>li:first-child{
+	text-align: center;
+	color: white;
+	background-color: crimson;
+}
+#right-top{
+	margin-left: 38px;
+	line-height: 60px;
+	color: #999999;
+}
+#right-top>span{
+	color: #ddd;
+	margin:0 10px;
+}
+#tip{
+	width: 590px;
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-size: 12px;
+	border: 1px solid #FF6600;
+	background-color: #FFFDEF;
+}
+#tip>hgroup{
+	color: #FF6600;
+	font-weight: 600;
+}

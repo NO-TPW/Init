@@ -1,0 +1,42 @@
+#card_list{
+	width: 85%;
+	height: 100px;
+	margin: 0 auto;
+}
+#card_list>div{
+	width: 220px;
+	height: 100px;
+	border-radius: 5px;
+	display: inline-block;
+	border: #DDDDDD solid 0.5px;
+}
+.card>p{
+	text-align: center;
+	width: 220px;
+	height: 24px;
+	line-height: 24px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #CCCCCC;
+}
+.card>img{
+	margin-top: 15px;
+	margin-left: 34px;
+}
+#card_add{
+	vertical-align: top;
+	margin-left: 3px;
+	background-color: #f3f3f3;
+	text-align:center;
+}
+#card_add>img{
+	margin-top: 23px;
+}
+#right>hr{
+	width: 88%;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	border-top:2px solid #F3F3F3;
+	border-bottom: 0;
+}

@@ -1,0 +1,144 @@
+#msg{
+	width: 85%;
+	height: 80px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+#msg>p>span{
+	color: #FF6600;
+}
+#msg>div{
+	width: 100%;
+}
+#msg>div>div{
+	margin-top: 15px;
+	height: 25px;
+	display: inline-block;
+	background-color: #F5F4F4;
+}
+#msg>div>div>h{
+	display: inline-block;
+	width: 130px;
+}
+#msg>div>div{
+	margin-right: 10px;
+}
+#msg>div>div>i{
+	padding-right: 4px;
+}
+#msg>div>div>h,#msg>div>div>span,#msg>div>div>i{
+	vertical-align: top;
+	line-height: 25px;
+}
+#msg>div>div>div{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 25px;
+	height: 25px;
+	border: 0;
+}
+.png1{
+	background: url(../front/common/images/ico-all.png) -3px -143px;
+}
+.png2{
+	background: url(../front/common/images/ico-all.png) -45px -143px;
+}
+.png3{
+	background: url(../front/common/images/ico-all.png) -83px -143px;
+}
+
+#right>hr{
+	width: 88%;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	border-top:2px solid #F3F3F3;
+	border-bottom: 0;
+}
+#date_select,#state_selct{
+	margin-top: 15px;
+	margin-left: 50px;
+}
+#date_select>h,#state_selct>h{
+	padding-right: 10px;
+	color: #000000;
+	font-weight: 600;
+}
+#date_select>input{
+	font-size: 12px;
+	width: 110px;
+	height: 20px;
+}
+#date_select i:nth-child(4),#state_selct i:nth-child(2){
+	color: white;
+	background-color: #DC143C;
+}
+#date_select>i,#state_selct>i{
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	width: 60px;
+	height: 20px;
+	margin-left: 5px;
+}
+#order_table{
+	margin-top: 10px;
+}
+#order_table>table {
+	width: 90%;
+	margin-left: 50px;
+}
+#order_table thead{
+	border-top: 1px solid #DDDDDD;
+	background-color: #F3F3F3;
+}
+#order_table tr{
+	border-bottom: 1px solid #DDDDDD;
+}
+#order_table tr span{
+	color: #FF6600;
+}
+#order_table tr a{
+	color: red;
+	text-decoration: underline;
+}
+#order_table>table td{
+	height:30px
+}
+#order_table tbody tr:nth-child(odd) {/* 匹配奇数行 */
+
+}
+#order_table tbody tr:nth-child(even) {/* 匹配偶数行*/
+	background-color: #F3F3F3;
+} 
+#paging{
+	margin-right: 30px;
+	float: right;
+}
+#paging>div{
+	text-align: center;
+	display: inline-block;
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	border: solid 1px #DDDDDD;
+	border-radius: 3px;
+	margin: 10px auto;
+}
+#paging>button{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border: solid 1px #DDDDDD;
+	border-radius: 3px;
+	background-color: white;
+	margin-left: 3px;
+}
+#paging>div:nth-child(7){
+	margin-left: 3px;
+}
+#paging>div>img{
+	width: 10px;
+	height: 10px;
+}

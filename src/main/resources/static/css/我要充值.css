@@ -1,0 +1,72 @@
+#banklist{
+	width: 85%;
+	height: 100px;
+	margin: 0 auto;
+	text-align: left;
+}
+#banklist>div{
+	width: 143px;
+	height: 38px;
+	display: inline-block;
+	vertical-align: top;
+	border: #CCCCCC solid 1px;
+}
+#banklist>div>img{
+	width: 100%;
+	height: 100%;
+}
+#banklist>div:nth-child(5),
+#banklist>div:nth-child(6),
+#banklist>div:nth-child(7){
+	margin-top: 10px;
+}
+#banklist>div:nth-child(7){
+	border: 0;
+	text-align: center;
+	line-height: 40px;
+}
+#invest{
+	width: 86%;
+	margin: 8px auto;
+}
+#invest>hr{
+	border-top:1px silver dashed;
+	border-bottom: 0;
+}
+#invest>div{
+	width: 300px;
+	height: 170px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+#invest_from>label>span{
+	 font-size: 18px;
+	 color: #FF6600;
+	 margin-left: 10px;
+}
+#invest_from>input{
+	margin-top: 10px;
+	margin-left: 10px;
+	border: solid 1px #EEEEEE;
+	border-radius: 3px;
+	background-color: #F5F4F4;
+}
+#invest_from>input:nth-child(7){
+	width: 80px;
+}
+#invest_from>img{
+	width: 76px;
+	height: 26px;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-left: 3px;
+}
+#invest_from>h{
+	font-size: 8px;
+}
+#invest_from>input[type="button"]{
+	width: 58px;
+	background-color: #FF6600;
+	color: white;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link type="text/css" rel="styleSheet"  href="front/common/css/public.css" />
+		<link type="text/css" rel="styleSheet"  href="css/通用.css" />
+		<link type="text/css" rel="styleSheet"  href="css/银行卡管理.css" />
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/jump.js"></script>
+	</head>
+	<body>
+		<div id="top"></div>
+		
+		<div id="main">
+			<div id="centerbox">
+				<div id="left">
+					<ul>
+						<li><img src="img/user.png"><h>账户中心</h></li>
+						<li><h>资产统计</h><span>></span></li>
+						<li onclick="t1()"><h>我要充值</h><span>></span></li>
+						<li><h>我要提现</h><span>></span></li>
+						<li onclick="t2()" style="background-color: crimson; color: white;"><h>银行卡管理</h><span>></span></li>
+						<li><h>交易记录</h><span>></span></li>
+						<li onclick="t3()"><h>我的投资</h><span>></span></li>
+						<li onclick="t4()"><h>我的借款</h><span>></span></li>
+						<li><h>站内信息</h><span>></span></li>
+						<li><h>安全设置</h><span>></span></li>
+						<li><h>推荐好友</h><span>></span></li>
+					</ul>
+				</div>
+				
+				<div id="right">
+					<div id="right-top">
+						<span>—</span>银行卡管理<span>——————————————————————————————————</span>
+					</div>
+					<div id="card_list">
+						<div class="card">
+							<p>43674*********90097</p>
+							<img src="front/common/images/bank4.jpg" />
+						</div>
+						<div id="card_add">
+							<img src="front/common/images/add.jpg" />
+						</div>
+					</div>
+					<hr/>
+					<div id="tip">
+						<hgroup>温馨提示</hgroup>
+						<p>1、请保证您输入的是真确的储蓄卡账号，而非信用卡账号。</p>
+						<p>2、为了您的资金安全，请确提现银行账号和姓名和您进行实名验证的姓名一致。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="bottom"></div>
+	</body>
+</html>

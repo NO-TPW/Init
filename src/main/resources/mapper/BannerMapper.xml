@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tpw.p2pdemo.mapper.BannerMapper">
+    
+    <insert id="addBanner" parameterType="com.tpw.p2pdemo.pojo.Banner">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into p2p_banner values(default,#{bannerType},#{bannerTitle},#{bannerimg},#{create_time},#{is_use},#{terminal_type},#{dr},#{bannerUrl},#{bannerno})
+    </insert>
+    
+</mapper>

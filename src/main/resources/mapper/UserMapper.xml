@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tpw.p2pdemo.mapper.UserMapper">
+
+    <select id="login" parameterType="com.tpw.p2pdemo.vo.UserLoginVo" resultType="java.lang.Boolean">
+        select count(*)=1 from p2p_user where username=#{username} and password=#{password};
+    </select>
+
+    <insert id="adduser" parameterType="com.tpw.p2pdemo.pojo.User">
+        insert into p2p_user values (default,#{username},#{password},#{phone},#{dr},#{createTime},#{qqcode},#{qqnickname})
+    </insert>
+
+    <select id="listAll" resultType="com.tpw.p2pdemo.pojo.User">
+        select * from p2p_user
+    </select>
+
+    <select id="getUserByPhone" parameterType="com.tpw.p2pdemo.pojo.User"  resultType="com.tpw.p2pdemo.pojo.User">
+        select * from p2p_user where phone like "%"#{phone}"%"
+    </select>
+
+    <delete id="deleteUserById" parameterType="com.tpw.p2pdemo.pojo.User" >
+        delete from p2p_user where userid=#{userid}
+    </delete>
+
+    <select id="userPaging" parameterType="com.tpw.p2pdemo.vo.UserPagingVo" resultType="com.tpw.p2pdemo.pojo.User">
+        select * from p2p_user
+        <where>
+            <if test="phone!='' and phone!=null">
+                phone like "%"#{phone}"%"
+            </if>
+        </where>
+    </select>
+
+</mapper>

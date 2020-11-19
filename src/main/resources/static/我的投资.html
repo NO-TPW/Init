@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link type="text/css" rel="styleSheet"  href="front/common/css/public.css" />
+		<link type="text/css" rel="styleSheet"  href="css/通用.css" />
+		<link type="text/css" rel="styleSheet"  href="css/我的投资.css" />
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/jump.js"></script>
+	</head>
+	<body>
+		<div id="top"></div>
+		
+		<div id="main">
+			<div id="centerbox">
+				<div id="left">
+					<ul>
+						<li><img src="img/user.png"><h>账户中心</h></li>
+						<li><h>资产统计</h><span>></span></li>
+						<li onclick="t1()"><h>我要充值</h><span>></span></li>
+						<li><h>我要提现</h><span>></span></li>
+						<li onclick="t2()"><h>银行卡管理</h><span>></span></li>
+						<li><h>交易记录</h><span>></span></li>
+						<li onclick="t3()" style="background-color: crimson; color: white;"><h>我的投资</h><span>></span></li>
+						<li onclick="t4()"><h>我的借款</h><span>></span></li>
+						<li><h>站内信息</h><span>></span></li>
+						<li><h>安全设置</h><span>></span></li>
+						<li><h>推荐好友</h><span>></span></li>
+					</ul>
+				</div>
+				
+				<div id="right">
+					<div id="right-top">
+						<span>—</span>我的投资<span>——————————————————————————————————</span>
+					</div>
+					<div id="msg">
+						<p>投资项目：<span>5</span>个，总投金额：<span>700.00</span>元，累计收费：<span>29.47</span>元</p>
+						<div>
+							<div><div class="png1"></div><h>未还款项目</h><span>0</span><i>个</i></div>
+							<div><div class="png2"></div><h>还款中项目</h><span>4</span><i>个</i></div>
+							<div><div class="png3"></div><h>已还款项目</h><span>1</span><i>个</i></div>
+						</div>
+					</div>
+					<hr />
+					<div id="date_select">
+						<h>交易日期</h> <input type="date"/>—<input type="date" /> <i>全部</i> <i>最近一周</i> <i>最近一个月</i> <i>最近三个月</i>
+					</div>
+					<div id="state_selct">
+						<h>项目状态</h> <i>全部</i> <i>未还款项目</i> <i>还款中项目</i> <i>已还款项目</i>
+					</div>
+					<div id="order_table">
+						<table>
+							<thead><tr><td>订单号</td><td>项目名称</td><td>投资金额</td><td>年利率</td><td>投资时间</td><td>待还利息</td><td>查看合同</td></tr></thead>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+							<tr><td>201410282710792166</td><td>安捷宝(第一期)002</td><td><span>100.00元</span></td><td>13.80%+2.20%</td><td>2013-01-5 22:24:55</td><td><span>5.34元</span></td><td><a>查看合同</a></td></tr>
+						</table>
+						<div id="paging">
+							<div><img src="img/左翻页.png"><h>上一页</h></div><button>1</button><button>2</button><button>3</button><i>...</i><button>23</button><div><h>下一页</h><img src="img/右翻页.png"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="bottom"></div>
+	</body>
+</html>
