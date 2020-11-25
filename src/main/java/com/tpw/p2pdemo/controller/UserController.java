@@ -64,11 +64,12 @@ public class UserController {
     public String login(@RequestBody UserLoginVo userLoginVo, HttpServletRequest request){
         userLoginVo.setPassword(MD5Utils.toMD5(userLoginVo.getPassword()));
         String flag = (String) request.getSession().getAttribute("flag");
+        request.removeAttribute("flag");
         if (userLoginVo.getCaptch().equalsIgnoreCase((String) redisTemplate.opsForValue().get(flag))){
             String uuidToken= UUID.randomUUID().toString();
             uuidToken=uuidToken.replace("-","");
             if(userService.login(userLoginVo)){
-                redisTemplate.opsForValue().set(uuidToken,userLoginVo.getUsername());
+                redisTemplate.opsForValue().set(uuidToken,userLoginVo.getUsername(),7,TimeUnit.DAYS);
                 return uuidToken;
             }
         }
